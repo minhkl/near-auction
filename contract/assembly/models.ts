@@ -34,7 +34,7 @@ export class Auction {
   bid(): void {
     assert(this.checkIsEnded() == false, "The auction has ended");
     assert(
-      Context.attachedDeposit > this.minPrice,
+      Context.attachedDeposit > this.highestPrice,
       "The price must be higher than " + asNear(this.highestPrice)
     );
     logging.log("sender: " + Context.sender);
