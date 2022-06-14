@@ -37,8 +37,6 @@ export class Auction {
       Context.attachedDeposit > this.highestPrice,
       "The price must be higher than " + asNear(this.highestPrice)
     );
-    logging.log("sender: " + Context.sender);
-    logging.log("highestPriceAccount: " + this.highestPriceAccount);
     assert(
       Context.sender != this.highestPriceAccount,
       "Your are the leader already"

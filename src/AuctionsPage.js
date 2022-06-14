@@ -30,7 +30,7 @@ const AuctionsPage = () => {
     setIsOpenDialog(false);
     mutate();
   };
-  console.log(auctions);
+
   return (
     <>
       <div>
